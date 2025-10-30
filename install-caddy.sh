@@ -46,7 +46,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
-ExecStart=$CADDY_PATH/caddy start --config $CADDYFILE_PATH
+ExecStart=$CADDY_PATH/caddy run --config $CADDYFILE_PATH
 ExecReload=$CADDY_PATH/caddy reload --config $CADDYFILE_PATH
 ExecStop=$CADDY_PATH/caddy stop
 
